@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon">
+    <title>Calculadora com Input</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title-container">
+            <h1>Calculadora Utilizando Switch</h1>
+            <img src="./src/calculator.png" alt="">
+        </div>
+        <div class="form-container">
+            <form id="formulario">
+
+                <div class="form-group">
+                    <label for="valor1">Digite o primeiro Valor:</label>
+                    <input type="number" id="valor1" placeholder="Somente números">
+                </div>
+
+                <div class="form-group">
+                    <label for="operacao">Digite a operação matemática:</label>
+                    <select id="operacao">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="valor2">Digite o segundo Valor:</label>
+                    <input type="number" id="valor2" placeholder="Somente números">
+                </div>
+
+                <div class="form-group">
+                    <button onclick="calcular()" type="button">Calcular</button>
+                </div>
+
+                <div id="resultado">
+                    
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
